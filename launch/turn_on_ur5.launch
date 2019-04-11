@@ -1,0 +1,10 @@
+<launch>
+
+  <include file="$(find ur_description)/launch/ur5_upload.launch" />
+  <include file="$(find ur_modern_driver)/launch/ur5_bringup.launch">
+    <arg name="robot_ip" value="192.168.1.102" />
+  </include>
+  <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch" />
+  <include file="$(find ur5_moveit_config)/launch/moveit_rviz.launch" />
+
+</launch>
