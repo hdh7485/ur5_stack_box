@@ -144,6 +144,8 @@ include_directories(
 add_executable(ur5_stack_box src/ur5_stack_box.cpp)
 target_link_libraries(ur5_stack_box ${catkin_LIBRARIES})
 
+add_executable(ur5_stack_box_on_dr src/ur5_stack_box_on_dr.cpp)
+target_link_libraries(ur5_stack_box_on_dr ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
