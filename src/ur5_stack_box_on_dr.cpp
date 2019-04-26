@@ -46,6 +46,8 @@
 #include <moveit_visual_tools/moveit_visual_tools.h>
 #include <std_msgs/Bool.h>
 
+#include <geometry_msgs/Twist.h>
+
 #include <cmath>
 
 //#define DEBUG

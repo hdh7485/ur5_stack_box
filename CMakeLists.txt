@@ -12,6 +12,7 @@ find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED system filesystem date_time thread)
 
 find_package(catkin REQUIRED COMPONENTS
+  geometry_msgs
   moveit_tutorials
   rosserial_arduino
   rosserial_python
@@ -112,7 +113,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS 
   LIBRARIES ur5_stack_box
-  CATKIN_DEPENDS moveit_core moveit_visual_tools moveit_ros_planning_interface interactive_markers moveit_tutorials rosserial_arduino rosserial_python ur5_moveit_config ur_description ur_modern_driver
+  CATKIN_DEPENDS geometry_msgs moveit_core moveit_visual_tools moveit_ros_planning_interface interactive_markers moveit_tutorials rosserial_arduino rosserial_python ur5_moveit_config ur_description ur_modern_driver
   DEPENDS 
     EIGEN3
 )
